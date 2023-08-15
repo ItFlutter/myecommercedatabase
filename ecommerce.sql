@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 14, 2023 at 06:56 PM
+-- Generation Time: Aug 15, 2023 at 04:05 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -270,7 +270,7 @@ CREATE TABLE `items` (
   `items_desc_ar` varchar(255) NOT NULL,
   `items_image` varchar(255) NOT NULL,
   `items_count` int(11) NOT NULL,
-  `items_active` tinyint(4) NOT NULL,
+  `items_active` tinyint(4) NOT NULL DEFAULT 1 COMMENT '0=>hidden,1=>active',
   `items_price` float NOT NULL,
   `items_discount` smallint(6) NOT NULL,
   `items_date` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -437,7 +437,18 @@ INSERT INTO `notification` (`notification_id`, `notification_title`, `notificati
 (61, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-07-08 02:27:50'),
 (62, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-07-08 02:28:56'),
 (63, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-07-08 02:57:46'),
-(64, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-07-08 02:58:32');
+(64, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-07-08 02:58:32'),
+(65, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-08-14 02:46:14'),
+(66, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-08-14 02:49:58'),
+(67, 'Success', 'Order With The ID 53 Has Been Delivered', 32, 53, '2023-08-14 02:51:31'),
+(68, 'Success', 'Order With The ID 55 Has Approved', 32, 55, '2023-08-15 14:44:42'),
+(69, 'Success', 'Order With The ID 55 Has Approved', 32, 55, '2023-08-15 14:45:47'),
+(70, 'Success', 'Order With The ID 55 Has Been Prepared And Will Be Sending', 32, 55, '2023-08-15 14:50:06'),
+(71, 'Success', 'Order With The ID 52 Has Approved', 32, 52, '2023-08-15 15:13:35'),
+(72, 'Success', 'Order With The ID 52 Has Been Prepared And Will Be Sending', 32, 52, '2023-08-15 15:14:44'),
+(73, 'Success', 'Order With The ID 46 Has Approved', 32, 46, '2023-08-15 15:16:27'),
+(74, 'Success', 'Order With The ID 46 Has Been Prepared And Ready To Recieve', 32, 46, '2023-08-15 15:16:48'),
+(75, 'Success', 'Order With The ID 55 Has Been Prepared And Will Be Sending', 32, 55, '2023-08-15 15:17:31');
 
 -- --------------------------------------------------------
 
@@ -468,9 +479,9 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`orders_id`, `orders_usersid`, `orders_address`, `orders_type`, `orders_pricedelivery`, `orders_price`, `orders_totalprice`, `orders_coupon`, `orders_rating`, `orders_noterating`, `orders_paymentmethod`, `orders_status`, `orders_delivery`, `orders_datetime`) VALUES
 (46, 32, 0, 1, 0, 900, 810, 1, 1, 'one', 1, 4, 0, '2023-05-19 19:23:17'),
-(52, 32, 19, 0, 10, 900, 910, 0, 0, 'none', 0, 4, 1, '2023-06-04 00:49:17'),
-(53, 32, 19, 0, 10, 1832, 1842, 0, 0, 'none', 0, 0, 0, '2023-06-05 19:07:14'),
-(55, 32, 19, 0, 10, 2700, 2710, 0, 0, 'none', 0, 0, 0, '2023-06-23 03:09:19');
+(52, 32, 19, 0, 10, 900, 910, 0, 0, 'none', 0, 2, 0, '2023-06-04 00:49:17'),
+(53, 32, 19, 0, 10, 1832, 1842, 0, 0, 'none', 0, 4, 0, '2023-06-05 19:07:14'),
+(55, 32, 19, 0, 10, 2700, 2710, 0, 0, 'none', 0, 1, 0, '2023-06-23 03:09:19');
 
 -- --------------------------------------------------------
 
@@ -746,7 +757,7 @@ ALTER TABLE `cart`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `coupon`
@@ -770,7 +781,7 @@ ALTER TABLE `favorite`
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `itemsimages`
@@ -782,7 +793,7 @@ ALTER TABLE `itemsimages`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
 
 --
 -- AUTO_INCREMENT for table `orders`
