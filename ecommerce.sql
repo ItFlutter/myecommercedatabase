@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 15, 2023 at 04:05 PM
+-- Generation Time: Sep 19, 2023 at 12:07 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -43,7 +43,8 @@ CREATE TABLE `address` (
 
 INSERT INTO `address` (`address_id`, `address_usersid`, `address_name`, `address_city`, `address_street`, `address_lat`, `address_long`) VALUES
 (19, 32, 'Home', 'Homs', 'Zahraa', 34.7295572, 36.7317343),
-(23, 32, 'company', 'homs', 'sabel', 34.729588, 36.7317276);
+(23, 32, 'company', 'homs', 'sabel', 34.729588, 36.7317276),
+(28, 42, 'home', 'homs', 'alzahra', 34.7336379, 36.7345331);
 
 -- --------------------------------------------------------
 
@@ -132,7 +133,24 @@ INSERT INTO `cart` (`cart_id`, `cart_usersid`, `cart_itemsid`, `cart_ordres`) VA
 (177, 32, 4, 72),
 (178, 32, 5, 73),
 (179, 32, 5, 73),
-(180, 32, 3, 74);
+(180, 32, 3, 74),
+(194, 32, 2, 81),
+(195, 32, 2, 81),
+(196, 32, 5, 81),
+(197, 32, 5, 81),
+(203, 42, 5, 0),
+(204, 32, 5, 82),
+(205, 32, 5, 83),
+(206, 32, 5, 84),
+(207, 32, 5, 85),
+(208, 32, 5, 86),
+(209, 32, 4, 87),
+(210, 32, 2, 88),
+(211, 32, 2, 88),
+(212, 32, 2, 89),
+(213, 32, 2, 89),
+(219, 32, 2, 90),
+(220, 32, 2, 90);
 
 -- --------------------------------------------------------
 
@@ -207,7 +225,8 @@ CREATE TABLE `coupon` (
 --
 
 INSERT INTO `coupon` (`coupon_id`, `coupon_name`, `coupon_count`, `coupon_expiredate`, `coupon_discount`) VALUES
-(1, 'ahmad', 2, '2023-07-19 00:00:00', 10);
+(1, 'ahmad', 2, '2023-08-18 19:26:39', 10),
+(10, 'hazem', 3, '2023-08-22 00:03:19', 5);
 
 -- --------------------------------------------------------
 
@@ -231,7 +250,8 @@ CREATE TABLE `delivery` (
 --
 
 INSERT INTO `delivery` (`delivery_id`, `delivery_name`, `delivery_password`, `delivery_email`, `delivery_phone`, `delivery_verfiycode`, `delivery_approve`, `delivery_create`) VALUES
-(1, 'demo', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'demo@gmail.com', '0', 17787, 1, '2023-07-01 16:30:57');
+(1, 'demo', '89e495e7941cf9e40e6980d14a16bf023ccd4c91', 'demo@gmail.com', '0930405477', 17787, 1, '2023-07-01 16:30:57'),
+(15, 'trainds', 'e7400b6995e1cdd613a0ed31f3a72e7566beaa84', 'a@g.fd', '0930408121', 57767, 1, '2023-08-18 17:04:15');
 
 -- --------------------------------------------------------
 
@@ -252,9 +272,7 @@ CREATE TABLE `favorite` (
 INSERT INTO `favorite` (`favorite_id`, `favorite_usersid`, `favorite_itemsid`) VALUES
 (33, 37, 2),
 (53, 37, 3),
-(98, 32, 4),
-(99, 32, 5),
-(100, 32, 2);
+(118, 42, 5);
 
 -- --------------------------------------------------------
 
@@ -448,7 +466,28 @@ INSERT INTO `notification` (`notification_id`, `notification_title`, `notificati
 (72, 'Success', 'Order With The ID 52 Has Been Prepared And Will Be Sending', 32, 52, '2023-08-15 15:14:44'),
 (73, 'Success', 'Order With The ID 46 Has Approved', 32, 46, '2023-08-15 15:16:27'),
 (74, 'Success', 'Order With The ID 46 Has Been Prepared And Ready To Recieve', 32, 46, '2023-08-15 15:16:48'),
-(75, 'Success', 'Order With The ID 55 Has Been Prepared And Will Be Sending', 32, 55, '2023-08-15 15:17:31');
+(75, 'Success', 'Order With The ID 55 Has Been Prepared And Will Be Sending', 32, 55, '2023-08-15 15:17:31'),
+(76, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-08-15 17:57:18'),
+(77, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-08-15 18:00:30'),
+(78, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-08-19 16:39:51'),
+(79, 'Success', 'Order With The ID 46 Has Approved', 32, 46, '2023-08-19 17:11:46'),
+(80, 'Success', 'Order With The ID 81 Has Approved', 32, 81, '2023-08-20 09:59:46'),
+(81, 'Success', 'Order With The ID 81 Has Been Prepared And Ready To Recieve', 32, 81, '2023-08-20 10:00:09'),
+(82, 'Success', 'Order With The ID 81 Has Been Prepared And Ready To Recieve', 32, 81, '2023-08-20 10:01:05'),
+(83, 'Success', 'Order With The ID 81 Has Been Prepared And Ready To Recieve', 32, 81, '2023-08-20 10:01:49'),
+(84, 'Success', 'Order With The ID 81 Has Approved', 32, 81, '2023-08-20 10:11:28'),
+(85, 'Success', 'Order With The ID 83 Has Approved', 32, 83, '2023-08-20 10:25:08'),
+(86, 'Success', 'Order With The ID 86 Has Approved', 32, 86, '2023-08-20 10:33:57'),
+(87, 'Success', 'Order With The ID 88 Has Approved', 32, 88, '2023-08-20 15:48:10'),
+(88, 'Success', 'Order With The ID 88 Has Been Prepared And Will Be Sending', 32, 88, '2023-08-20 15:48:59'),
+(89, 'Success', 'Order With The ID 88 On The Way', 32, 88, '2023-08-20 15:49:49'),
+(90, 'Success', 'Order With The ID 89 Has Approved', 32, 89, '2023-08-20 15:52:31'),
+(91, 'Success', 'Order With The ID 89 Has Been Prepared And Will Be Sending', 32, 89, '2023-08-20 15:53:05'),
+(92, 'Success', 'Order With The ID 89 On The Way', 32, 89, '2023-08-20 15:53:37'),
+(93, 'Success', 'Order With The ID 90 Has Approved', 32, 90, '2023-08-20 16:14:03'),
+(94, 'Success', 'Order With The ID 90 Has Been Prepared And Will Be Sending', 32, 90, '2023-08-20 16:14:26'),
+(95, 'Success', 'Order With The ID 90 On The Way', 32, 90, '2023-08-20 16:14:52'),
+(96, 'Success', 'Order With The ID 90 Has Been Delivered', 32, 90, '2023-08-20 16:15:28');
 
 -- --------------------------------------------------------
 
@@ -478,10 +517,10 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`orders_id`, `orders_usersid`, `orders_address`, `orders_type`, `orders_pricedelivery`, `orders_price`, `orders_totalprice`, `orders_coupon`, `orders_rating`, `orders_noterating`, `orders_paymentmethod`, `orders_status`, `orders_delivery`, `orders_datetime`) VALUES
-(46, 32, 0, 1, 0, 900, 810, 1, 1, 'one', 1, 4, 0, '2023-05-19 19:23:17'),
-(52, 32, 19, 0, 10, 900, 910, 0, 0, 'none', 0, 2, 0, '2023-06-04 00:49:17'),
-(53, 32, 19, 0, 10, 1832, 1842, 0, 0, 'none', 0, 4, 0, '2023-06-05 19:07:14'),
-(55, 32, 19, 0, 10, 2700, 2710, 0, 0, 'none', 0, 1, 0, '2023-06-23 03:09:19');
+(46, 32, 0, 1, 0, 900, 810, 1, 1, 'one', 1, 1, 0, '2023-05-19 19:23:17'),
+(52, 32, 19, 0, 10, 900, 910, 0, 0, 'none', 0, 3, 1, '2023-06-04 00:49:17'),
+(53, 32, 19, 0, 10, 1832, 1842, 0, 1, '', 0, 2, 0, '2023-06-05 19:07:14'),
+(55, 32, 19, 0, 10, 2700, 2710, 0, 0, 'none', 0, 4, 1, '2023-06-23 03:09:19');
 
 -- --------------------------------------------------------
 
@@ -543,6 +582,31 @@ CREATE TABLE `ordersview` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `rating`
+--
+
+CREATE TABLE `rating` (
+  `rating_id` int(11) NOT NULL,
+  `rating_userid` int(11) NOT NULL,
+  `rating_itemid` int(11) NOT NULL,
+  `rating_rate` tinyint(4) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `rating`
+--
+
+INSERT INTO `rating` (`rating_id`, `rating_userid`, `rating_itemid`, `rating_rate`) VALUES
+(1, 32, 5, 3),
+(2, 37, 5, 2),
+(3, 42, 5, 3),
+(4, 32, 4, 2),
+(5, 32, 3, 3),
+(6, 32, 2, 1);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `settings`
 --
 
@@ -572,7 +636,7 @@ CREATE TABLE `users` (
   `users_password` varchar(255) NOT NULL,
   `users_email` varchar(100) NOT NULL,
   `users_phone` varchar(100) NOT NULL,
-  `users_verifycode` int(11) NOT NULL,
+  `users_verifycode` int(4) NOT NULL,
   `users_approve` tinyint(4) NOT NULL DEFAULT 0,
   `users_create` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -583,7 +647,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`users_id`, `users_name`, `users_password`, `users_email`, `users_phone`, `users_verifycode`, `users_approve`, `users_create`) VALUES
 (32, 'Ahmad It', '35f9452709058d77b1a3151f8be8a682509828cc', 'ahmad@gmail.com', '123456789', 26219, 1, '2023-04-04 01:37:18'),
-(37, 'hazem', '0ec8868506739fbb26c28621369e25a5cdca1dc2', 'hazem@gmail.com', '123456788', 37368, 1, '2023-04-24 11:30:43');
+(37, 'hazem', '0ec8868506739fbb26c28621369e25a5cdca1dc2', 'hazem@gmail.com', '123456788', 37368, 1, '2023-04-24 11:30:43'),
+(42, 'mohamad', '2580ad46483870d9b9a210cf497712db46b0792e', 'mohamadalnok@gmail.com', '0998856799', 50949, 1, '2023-08-19 21:10:52');
 
 -- --------------------------------------------------------
 
@@ -718,6 +783,12 @@ ALTER TABLE `orders`
   ADD PRIMARY KEY (`orders_id`);
 
 --
+-- Indexes for table `rating`
+--
+ALTER TABLE `rating`
+  ADD PRIMARY KEY (`rating_id`);
+
+--
 -- Indexes for table `settings`
 --
 ALTER TABLE `settings`
@@ -739,7 +810,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `admin`
@@ -751,37 +822,37 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=181;
+  MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=221;
 
 --
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `categories_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `coupon`
 --
 ALTER TABLE `coupon`
-  MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `coupon_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `delivery`
 --
 ALTER TABLE `delivery`
-  MODIFY `delivery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `delivery_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT for table `favorite`
 --
 ALTER TABLE `favorite`
-  MODIFY `favorite_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
+  MODIFY `favorite_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT for table `items`
 --
 ALTER TABLE `items`
-  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `itemsimages`
@@ -793,13 +864,19 @@ ALTER TABLE `itemsimages`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=76;
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `orders_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
+  MODIFY `orders_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+
+--
+-- AUTO_INCREMENT for table `rating`
+--
+ALTER TABLE `rating`
+  MODIFY `rating_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `settings`
@@ -811,7 +888,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `users_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- Constraints for dumped tables
