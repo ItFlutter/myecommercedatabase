@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 19, 2023 at 12:07 AM
+-- Generation Time: Feb 08, 2024 at 09:33 PM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 7.4.30
 
@@ -487,7 +487,64 @@ INSERT INTO `notification` (`notification_id`, `notification_title`, `notificati
 (93, 'Success', 'Order With The ID 90 Has Approved', 32, 90, '2023-08-20 16:14:03'),
 (94, 'Success', 'Order With The ID 90 Has Been Prepared And Will Be Sending', 32, 90, '2023-08-20 16:14:26'),
 (95, 'Success', 'Order With The ID 90 On The Way', 32, 90, '2023-08-20 16:14:52'),
-(96, 'Success', 'Order With The ID 90 Has Been Delivered', 32, 90, '2023-08-20 16:15:28');
+(96, 'Success', 'Order With The ID 90 Has Been Delivered', 32, 90, '2023-08-20 16:15:28'),
+(97, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-21 02:44:32'),
+(98, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-21 02:46:15'),
+(99, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-21 04:18:58'),
+(100, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-21 04:53:28'),
+(101, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:23:35'),
+(102, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:26:37'),
+(103, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:30:09'),
+(104, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:32:54'),
+(105, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:35:36'),
+(106, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:37:01'),
+(107, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:38:53'),
+(108, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 00:39:53'),
+(109, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-23 16:31:50'),
+(110, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-23 16:34:03'),
+(111, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-23 16:57:17'),
+(112, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:42:42'),
+(113, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:43:22'),
+(114, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:45:36'),
+(115, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:46:54'),
+(116, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:49:17'),
+(117, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 19:52:05'),
+(118, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-23 19:53:39'),
+(119, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:02:01'),
+(120, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:05:34'),
+(121, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:08:35'),
+(122, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:10:04'),
+(123, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:11:28'),
+(124, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:14:26'),
+(125, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:15:17'),
+(126, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:19:05'),
+(127, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-23 20:21:12'),
+(128, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 15:33:43'),
+(129, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:21:36'),
+(130, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:25:56'),
+(131, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:30:14'),
+(132, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:46:08'),
+(133, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:47:55'),
+(134, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 17:51:57'),
+(135, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:05:59'),
+(136, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:08:48'),
+(137, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:14:04'),
+(138, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-24 18:16:11'),
+(139, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:23:42'),
+(140, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:29:03'),
+(141, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:30:26'),
+(142, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:32:12'),
+(143, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:33:10'),
+(144, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:34:17'),
+(145, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 18:35:38'),
+(146, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-24 23:00:21'),
+(147, 'Success', 'Order With The ID 53 Has Been Delivered', 32, 53, '2023-09-24 23:03:36'),
+(148, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-24 23:10:30'),
+(149, 'Success', 'Order With The ID 52 Has Been Delivered', 32, 52, '2023-09-24 23:12:22'),
+(150, 'Success', 'Order With The ID 53 On The Way', 32, 53, '2023-09-24 23:13:05'),
+(151, 'Success', 'Order With The ID 53 Has Been Delivered', 32, 53, '2023-09-24 23:14:22'),
+(152, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-25 21:30:50'),
+(153, 'Success', 'Order With The ID 52 On The Way', 32, 52, '2023-09-25 21:34:34');
 
 -- --------------------------------------------------------
 
@@ -517,9 +574,9 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`orders_id`, `orders_usersid`, `orders_address`, `orders_type`, `orders_pricedelivery`, `orders_price`, `orders_totalprice`, `orders_coupon`, `orders_rating`, `orders_noterating`, `orders_paymentmethod`, `orders_status`, `orders_delivery`, `orders_datetime`) VALUES
-(46, 32, 0, 1, 0, 900, 810, 1, 1, 'one', 1, 1, 0, '2023-05-19 19:23:17'),
+(46, 32, 0, 1, 0, 900, 810, 1, 1, 'one', 1, 0, 0, '2023-05-19 19:23:17'),
 (52, 32, 19, 0, 10, 900, 910, 0, 0, 'none', 0, 3, 1, '2023-06-04 00:49:17'),
-(53, 32, 19, 0, 10, 1832, 1842, 0, 1, '', 0, 2, 0, '2023-06-05 19:07:14'),
+(53, 32, 19, 0, 10, 1832, 1842, 0, 1, '', 0, 2, 1, '2023-06-05 19:07:14'),
 (55, 32, 19, 0, 10, 2700, 2710, 0, 0, 'none', 0, 4, 1, '2023-06-23 03:09:19');
 
 -- --------------------------------------------------------
@@ -864,7 +921,7 @@ ALTER TABLE `itemsimages`
 -- AUTO_INCREMENT for table `notification`
 --
 ALTER TABLE `notification`
-  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `notification_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=154;
 
 --
 -- AUTO_INCREMENT for table `orders`
